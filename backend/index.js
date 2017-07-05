@@ -3,7 +3,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const server = require('http').Server(app);
-const io = require('socket.io')(server);
 const session = require('express-session');
 const config = require('config');
 const port = config.get('port');
@@ -17,6 +16,12 @@ app.use(session({
 	resave: true,
 	saveUninitialized: true
 }));
+
+
+// Module
+const bluemix = require('./module/bluemix')(server);
+
+
 // Static files
 app.use('/static', express.static(path.join(__dirname, 'public')));
 // Template engine
@@ -24,9 +29,10 @@ app.use(express.static(__dirname + '/views'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
 // Routing
-const route_main = require('./routes/index.js');
-const route_api = require('./routes/api/index.js');
+const route_main = require('./routes/index');
+const route_api = require('./routes/api/index');
 
 app.use('/', route_main);
 app.use('/api', route_api);
