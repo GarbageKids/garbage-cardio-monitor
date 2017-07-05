@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=backend:* node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Galt Davaa",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "config": "^1.26.1",
+    "crypto": "0.0.3",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "mongoose": "^4.11.1",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
+  }
+}
