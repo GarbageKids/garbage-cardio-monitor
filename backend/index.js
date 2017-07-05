@@ -30,9 +30,3 @@ const route_api = require('./routes/api/index.js');
 
 app.use('/', route_main);
 app.use('/api', route_api);
-
-
-
-
-
-
