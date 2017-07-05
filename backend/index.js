@@ -17,10 +17,8 @@ app.use(session({
 	saveUninitialized: true
 }));
 
-
 // Module
 const bluemix = require('./module/bluemix')(server);
-
 
 // Static files
 app.use('/static', express.static(path.join(__dirname, 'public')));
@@ -29,10 +27,11 @@ app.use(express.static(__dirname + '/views'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
 // Routing
 const route_main = require('./routes/index');
 const route_api = require('./routes/api/index');
+const route_bluemix = require('./routes/bluemix/index');
 
 app.use('/', route_main);
 app.use('/api', route_api);
+app.use('/bluemix', route_api);
