@@ -11,7 +11,7 @@ const db = mongoose.createConnection(db_host, db_name);
 // Model
 const User = require('./models/user.js')(db);
 const Group = require('./models/group.js')(db);
+const Store = require('./models/store.js')(db);
 
 
-
-module.exports =  {User, Group};
+module.exports =  {User, Group, Store};

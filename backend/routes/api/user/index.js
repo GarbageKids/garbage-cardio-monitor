@@ -7,7 +7,18 @@ const algorithm = 'aes-256-ctr';
 
 app.post('/login', handleNoAuth, handleLogin);
 app.post('/signup', handleNoAuth, handleSignUp);
+
 app.get('/logout', handleAuth, handleLogout);
+
+app.get('/', getAuth);
+
+function getAuth(req, res) {
+	if(req.session.user) {
+		res.json(req.session.user);
+	} else {
+		res.json({ no_auth: 0 });
+	}
+}
 
 // 404
 app.use(handle404);

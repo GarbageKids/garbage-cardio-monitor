@@ -1,0 +1,74 @@
+{
+    "AvailabilityMonitoring": [
+        {
+            "credentials": {
+                "cred_url": "https://perfbroker.eu-gb.bluemix.net",
+                "token": "cdn5SSDGgXkYY052ew/7CQ1HeMMGwFdUBuAC3rGtejS8HxAO9AuTJgF/7+8qArw3WJVQXTQfkk3hq8yztb5nC8foGwYXrUTMsEG7f3AFKAI="
+            },
+            "syslog_drain_url": null,
+            "volume_mounts": [],
+            "label": "AvailabilityMonitoring",
+            "provider": null,
+            "plan": "Lite",
+            "name": "availability-monitoring-auto",
+            "tags": [
+                "ibm_created",
+                "bluemix_extensions",
+                "dev_ops",
+                "lite"
+            ]
+        }
+    ],
+    "cloudantNoSQLDB": [
+        {
+            "credentials": {
+                "username": "937b9893-671a-4f7b-95bb-afd40e21ec2d-bluemix",
+                "password": "96be07afcf18508b7b808f19816489c68dae0d1bd55655c80c32da8eae6dffdc",
+                "host": "937b9893-671a-4f7b-95bb-afd40e21ec2d-bluemix.cloudant.com",
+                "port": 443,
+                "url": "https://937b9893-671a-4f7b-95bb-afd40e21ec2d-bluemix:96be07afcf18508b7b808f19816489c68dae0d1bd55655c80c32da8eae6dffdc@937b9893-671a-4f7b-95bb-afd40e21ec2d-bluemix.cloudant.com"
+            },
+            "syslog_drain_url": null,
+            "volume_mounts": [],
+            "label": "cloudantNoSQLDB",
+            "provider": null,
+            "plan": "Lite",
+            "name": "cardio-monitor-cloudantNoSQLDB",
+            "tags": [
+                "data_management",
+                "ibm_created",
+                "lite",
+                "ibm_dedicated_public"
+            ]
+        }
+    ],
+    "iotf-service": [
+        {
+            "credentials": {
+                "iotCredentialsIdentifier": "a2g6k39sl6r5",
+                "mqtt_host": "sul3ru.messaging.internetofthings.ibmcloud.com",
+                "mqtt_u_port": 1883,
+                "mqtt_s_port": 8883,
+                "http_host": "sul3ru.internetofthings.ibmcloud.com",
+                "org": "sul3ru",
+                "apiKey": "a-sul3ru-eilnw8hyiz",
+                "apiToken": "k2K@qAhPoOOt-pEGjb"
+            },
+            "syslog_drain_url": null,
+            "volume_mounts": [],
+            "label": "iotf-service",
+            "provider": null,
+            "plan": "iotf-service-free",
+            "name": "cardio-monitor-iotf-service",
+            "tags": [
+                "internet_of_things",
+                "Internet of Things",
+                "ibm_created",
+                "ibm_dedicated_public",
+                "lite"
+            ]
+        }
+    ]
+}
+
+https://console.bluemix.net/docs/services/IoT/applications/libraries/nodejs.html#nodejs

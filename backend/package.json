@@ -18,6 +18,7 @@
     "crypto": "0.0.3",
     "express": "^4.15.3",
     "express-session": "^1.15.3",
+    "ibmiotf": "^0.2.37",
     "mongoose": "^4.11.1",
     "socket.io": "^2.0.3"
   },

@@ -1,0 +1,21 @@
+<div class="login" ng-controller="LoginCtrl">
+    <div class="login-screen">
+        <div class="app-title">
+            <h1>HEALTH</h1>
+        </div>
+        <div class="login-form">
+            <form ng-submit="submit()">
+                <div class="control-group">
+                    <input type="email" class="login-field" ng-model="form.email" name="email" placeholder="Цахим хаяг" required="">
+                    <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
+                <input type="password" class="login-field" ng-model="form.password" name="password" placeholder="Нууц үг" required="">
+                <div class="control-group">
+                    <label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large btn-block">Нэвтрэх</button>
+            </form>
+            <a class="login-link" href="register.html">Бүртгүүлэх</a>
+        </div>
+    </div>
+</div>
