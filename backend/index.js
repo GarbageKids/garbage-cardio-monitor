@@ -36,4 +36,4 @@ const route_bluemix = require('./routes/bluemix/index');
 
 app.use('/', route_main);
 app.use('/api', route_api);
-app.use('/bluemix', route_api);
+app.use('/bluemix', route_bluemix);

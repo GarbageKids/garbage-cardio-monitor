@@ -23,10 +23,16 @@ const schema = new mongoose.Schema({
 		type: String 
 	},
 	device_id: { 
-		type: String 
+		type: Number
+	},
+	lon: {
+		type: String
+	},
+	lat: {
+		type: String
 	}
 }, { runSettersOnQuery: true });
 
 module.exports = (db) => {
-	return db.model('User', schema);
+	return db.model('User', schema, 'user');
 };

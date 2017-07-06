@@ -1,16 +1,19 @@
 const mongoose = require('mongoose');
 const schema = new mongoose.Schema({
 	user_id: {
-		type: String
+		type: String,
+		required: true
 	},
 	value: {
-		type: Number
+		type: Number,
+		required: true
 	},
 	date: {
-		type: String
+		type: String,
+		required: true
 	}
 });
 
 module.exports = (db) => {
-	return db.model('Store', schema);
+	return db.model('Store', schema, 'store');
 };
