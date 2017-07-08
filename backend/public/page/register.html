@@ -1,0 +1,64 @@
+<div class="login-form" ng-controller="RegisterCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                <div class="login-screen1">
+                    <form ng-submit="submit()">
+                        <h2>БҮРТГҮҮЛЭХ</h2>
+                        
+
+                        <hr class="colorgraph">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="fname" ng-model="form.fname" class="form-control input-lg" placeholder="Овог">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="lname" ng-model="form.lname" id="last_name" class="form-control input-lg" placeholder="Нэр">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" ng-model="form.email" class="form-control input-lg" placeholder="E-майл хаяг">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="password" ng-model="form.password" class="form-control input-lg" placeholder="Нууц үг">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="cpassword" ng-model="form.cpassword" class="form-control input-lg" placeholder="Нууц үг давт">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <select ng-model="form.gender" class="form-control input-lg">
+                                        <option value="male" selected>Эр</option>
+                                        <option value="female">Эм</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="age" ng-model="form.age" class="form-control input-lg" placeholder="Нас">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="colorgraph">
+                        <div class="control-group">
+                            <label class="login-field-icon fui-lock" for="login-pass"></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-block">Бүртгүүлэх</button>
+                        <a class="login-link" href="index.html">Нэвтрэх</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
